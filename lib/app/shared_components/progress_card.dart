@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:project_management/app/constans/app_constants.dart';
 
-import '../features/dashboard/views/screens/page_one.dart';
-
 class ProgressCardData {
   final int totalUndone;
   final int totalTaskInProress;

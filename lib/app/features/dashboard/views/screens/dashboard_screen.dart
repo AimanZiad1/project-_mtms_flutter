@@ -7,6 +7,7 @@ import 'dart:js';
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:project_management/app/constans/app_constants.dart';
+import 'package:project_management/app/features/dashboard/views/screens/page_one.dart';
 import 'package:project_management/app/shared_components/chatting_card.dart';
 import 'package:project_management/app/shared_components/get_premium_card.dart';
 import 'package:project_management/app/shared_components/list_profil_image.dart';
@@ -104,33 +105,6 @@ class DashboardScreen extends GetView<DashboardController> {
   Widget _buildProgress({Axis axis = Axis.horizontal}) {
     return Column(
       children: [
-        Row(
-          children: [
-            const SizedBox(width: kSpacing / 2),
-            const Flexible(
-              flex: 4,
-              child: ProgressReportCard(
-                data: ProgressReportCardData(
-                  title: "احصائيات الصيانة",
-                  doneTask: 12,
-                  percent: .6,
-                  task: 10,
-                  undoneTask: 2,
-                ),
-              ),
-            ),
-            Flexible(
-              flex: 5,
-              child: ProgressCard(
-                data: const ProgressCardData(
-                  totalUndone: 10,
-                  totalTaskInProress: 2,
-                ),
-                onPressedCheck: () {},
-              ),
-            ),
-          ],
-        ),
         Row(
           children: [
             const SizedBox(width: kSpacing / 2),
