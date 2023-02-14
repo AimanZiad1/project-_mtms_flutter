@@ -59,7 +59,12 @@ class _Sidebar extends StatelessWidget {
               onSelected: (index, value) {
                 log("index : $index | label : ${value.label}");
 
-                if (index == 2) {}
+                if (index == 2) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) {
+                    return page_one();
+                  }));
+                }
               },
             ),
             const Divider(thickness: 1),
